@@ -67,11 +67,11 @@ export default function Contact() {
             </p>
 
             <div className="contact-details-list">
-              <a href="mailto:hetjaviya07@example.com" className="contact-detail-card">
+              <a href="mailto:hetjaviya08@example.com" className="contact-detail-card">
                 <div className="detail-icon"><FaEnvelope /></div>
                 <div className="detail-info">
                   <h4>Email</h4>
-                  <p>hetjaviya@example.com</p>
+                  <p>hetjaviya08@example.com</p>
                 </div>
               </a>
 
@@ -79,7 +79,7 @@ export default function Contact() {
                 <div className="detail-icon"><FaLinkedin /></div>
                 <div className="detail-info">
                   <h4>LinkedIn</h4>
-                  <p>linkedin.com/in/hetjaviya</p>
+                  <p>https://www.linkedin.com/in/het-javiya-4a2263380/</p>
                 </div>
               </a>
 
@@ -87,7 +87,7 @@ export default function Contact() {
                 <div className="detail-icon"><FaGithub /></div>
                 <div className="detail-info">
                   <h4>GitHub</h4>
-                  <p>github.com/hetjaviya</p>
+                  <p>https://github.com/hetjaviya15</p>
                 </div>
               </a>
 

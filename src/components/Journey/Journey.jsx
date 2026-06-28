@@ -29,23 +29,23 @@ function AnimatedCounter({ value, duration = 1.5, suffix = '' }) {
 
 const statsList = [
   { label: 'LeetCode Solved', value: 50, suffix: '+' },
-  { label: 'Codeforces Rating', value: 300, suffix: '+' },
-  { label: 'Projects Built', value: 12, suffix: '+' },
+  { label: 'Codeforces Rating', value: 370, suffix: '+' },
+  { label: 'Projects Built', value: 5, suffix: '+' },
   { label: 'Technologies Learned', value: 10, suffix: '+' }
 ];
 
 const achievementCards = [
   {
     title: 'DSA Practice',
-    description: 'Maintained 150+ days LeetCode active streak. Proficient in searching/sorting, trees, dynamic programming, and recursion.',
+    description: 'Maintained 15+ days LeetCode active streak. Proficient in searching/sorting, trees, dynamic programming, and recursion.',
     icon: <FaLaptopCode />,
-    metric: '350+ Solved'
+    metric: '50+ Solved'
   },
   {
     title: 'Coding Contests',
-    description: 'Regular participant in LeetCode Weekly and Codeforces rounds. Practicing speed-solving and modular logic constraints.',
+    description: 'Regular participant in LeetCode Weekly and Codeforces contests. Practicing speed-solving and modular logic constraints.',
     icon: <FaTrophy />,
-    metric: 'Pupil Rank Practice'
+    metric: 'Newbie Rank Practice'
   },
   {
     title: 'Academic Deliverables',
@@ -64,12 +64,12 @@ const achievementCards = [
 const growthMilestones = [
   {
     title: 'The Spark',
-    detail: 'Learned C++ syntax, basic control flows, and compiled first programs in terminal.',
+    detail: 'Learned Python syntax, basic control flows, and compiled first programs in terminal.',
     status: 'Completed'
   },
   {
     title: 'DSA Deep Dive',
-    detail: 'Unlocked 100+ LeetCode problems. Mastered arrays, hash maps, complexity, and basic sorting.',
+    detail: 'Unlocked 50+ LeetCode problems. Mastered arrays, hash maps, complexity, and basic sorting.',
     status: 'Completed'
   },
   {

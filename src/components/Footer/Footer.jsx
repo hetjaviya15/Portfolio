@@ -56,17 +56,17 @@ export default function Footer() {
 
           <div className="footer-socials">
             <Magnetic range={25} speed={0.3}>
-              <a href="https://github.com/hetjaviya" target="_blank" rel="noopener noreferrer" className="footer-social-icon" aria-label="GitHub">
+              <a href="https://github.com/hetjaviya15" target="_blank" rel="noopener noreferrer" className="footer-social-icon" aria-label="GitHub">
                 <FaGithub />
               </a>
             </Magnetic>
             <Magnetic range={25} speed={0.3}>
-              <a href="https://linkedin.com/in/hetjaviya" target="_blank" rel="noopener noreferrer" className="footer-social-icon" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/het-javiya-4a2263380/" target="_blank" rel="noopener noreferrer" className="footer-social-icon" aria-label="LinkedIn">
                 <FaLinkedinIn />
               </a>
             </Magnetic>
             <Magnetic range={25} speed={0.3}>
-              <a href="mailto:hetjaviya@example.com" className="footer-social-icon" aria-label="Email">
+              <a href="mailto:hetjaviya08@example.com" className="footer-social-icon" aria-label="Email">
                 <FaEnvelope />
               </a>
             </Magnetic>

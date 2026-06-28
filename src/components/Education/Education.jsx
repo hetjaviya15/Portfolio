@@ -17,7 +17,7 @@ const educationTimeline = [
     title: 'Completed First Year',
     institution: 'Milestones & Labs',
     subtitle: 'Data Structures & Algorithms Focus',
-    description: 'Mastered core Data Structures & Algorithms, Object-Oriented Programming (OOP) in C++ and JavaScript. Formed strong algorithmic bases and developed web apps.',
+    description: 'Mastered core Data Structures & Algorithms, Object-Oriented Programming (OOP) in Python and JavaScript. Formed strong algorithmic bases and developed web apps.',
     icon: <FaLaptopCode />
   },
   {
