@@ -4,7 +4,7 @@ A modern and responsive personal portfolio website built using React. It showcas
 
 ## 🚀 Live Demo
 
-portfolio-six-self-up2sy71x09.vercel.app
+https://portfolio-six-self-up2sy71x09.vercel.app/
 
 ## ✨ Features
 
