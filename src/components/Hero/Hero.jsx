@@ -188,7 +188,7 @@ export default function Hero() {
   "name": "Het Javiya",
   "education": {
     "degree": "B.Tech in CS & AI",
-    "institution": "Newton School",
+    "institution": "Newton School of Technology",
     "university": "Rishihood University"
   },
   "focus": [
@@ -203,10 +203,6 @@ export default function Hero() {
             </div>
             <div className="graphic-card-badge">CS + AI</div>
           </div>
-          
-          {/* Accent spinning circles */}
-          <div className="graphic-circle ring-1"></div>
-          <div className="graphic-circle ring-2"></div>
         </motion.div>
       </div>
 

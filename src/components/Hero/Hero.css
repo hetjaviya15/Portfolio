@@ -195,7 +195,7 @@
 
 .graphic-card {
   width: 100%;
-  max-width: 380px;
+  max-width: 430px;
   background-color: #0f172a; /* Slate 900 */
   border-radius: var(--radius-md);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -267,7 +267,6 @@
   padding: 4px 10px;
   border-radius: var(--radius-sm);
   letter-spacing: 0.05em;
-  transform: rotate(-3deg);
   box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
 }
 
@@ -278,19 +277,6 @@
   border: 1px dashed rgba(59, 130, 246, 0.15);
   pointer-events: none;
   z-index: 0;
-}
-
-.ring-1 {
-  width: 440px;
-  height: 440px;
-  animation: rotate-cw 40s linear infinite;
-}
-
-.ring-2 {
-  width: 480px;
-  height: 480px;
-  border-style: dotted;
-  animation: rotate-ccw 30s linear infinite;
 }
 
 /* Floating Shapes in Hero section background */
@@ -408,7 +394,7 @@
   }
 
   .hero-graphic {
-    max-width: 320px;
+    max-width: 430px;
     margin: 0 auto;
   }
 
