@@ -10,8 +10,8 @@ const projectsList = [
     title: "Naani's Pure Veg",
     description: 'A premium portfolio template platform designed specifically for students to showcase their work, credentials, and academic achievements in high-fidelity layout styles.',
     tags: ['React', 'CSS Modules', 'Framer Motion'],
-    github: 'https://github.com/hetjaviya15',
-    demo: 'https://portx.example.com',
+    github: 'https://github.com/hetjaviya15/naani-s_kitchen',
+    demo: 'https://naani-s-kitchen.vercel.app/',
     svg: (
       <svg viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg" className="project-svg">
         <rect width="400" height="240" rx="16" fill="#f8fafc" />
@@ -32,7 +32,7 @@ const projectsList = [
     title: "Sage Farm Cafe",
     description: 'A modern, responsive cafe website highlighting local roasts, interactive seat/table reservations, and custom micro-animations for menu items.',
     tags: ['HTML5', 'CSS3', 'JavaScript', 'AOS'],
-    github: 'https://github.com/hetjaviya/cafe',
+    github: 'https://github.com/hetjaviya15/sage_farm_cafe',
     demo: 'https://sage-farm-cafe.vercel.app/',
     svg: (
       <svg viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg" className="project-svg">
@@ -49,35 +49,7 @@ const projectsList = [
       </svg>
     )
   },
-  {
-    id: 'dashboard',
-    title: 'React Analytics Dashboard',
-    description: 'An interactive analytical dashboard rendering system logs, network statistics, API loading counters, and custom tech metric status modules.',
-    tags: ['React', 'Framer Motion', 'React Icons'],
-    github: 'https://github.com/hetjaviya/dashboard',
-    demo: 'https://dashboard.example.com',
-    svg: (
-      <svg viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg" className="project-svg">
-        <rect width="400" height="240" rx="16" fill="#f8fafc" />
-        <rect x="30" y="40" width="160" height="110" rx="10" fill="#ffffff" stroke="rgba(15,23,42,0.06)" strokeWidth="2"/>
-        <rect x="210" y="40" width="160" height="110" rx="10" fill="#ffffff" stroke="rgba(15,23,42,0.06)" strokeWidth="2"/>
-        <path d="M50 120L75 95L100 112L125 72L150 98L170 65" stroke="#3b82f6" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="graph-line" />
-        <circle cx="170" cy="65" r="5" fill="#3b82f6" />
-        <rect x="235" y="115" width="16" height="25" rx="3" fill="#cbd5e1" />
-        <rect x="260" y="95" width="16" height="45" rx="3" fill="#3b82f6" />
-        <rect x="285" y="65" width="16" height="75" rx="3" fill="#cbd5e1" />
-        <rect x="310" y="85" width="16" height="55" rx="3" fill="#3b82f6" />
-        <rect x="335" y="105" width="16" height="35" rx="3" fill="#cbd5e1" />
-        <rect x="30" y="170" width="340" height="40" rx="8" fill="#0f172a" />
-        <circle cx="52" cy="190" r="4" fill="#ef4444" />
-        <circle cx="64" cy="190" r="4" fill="#f59e0b" />
-        <circle cx="76" cy="190" r="4" fill="#10b981" />
-        <rect x="98" y="186" width="130" height="8" rx="2" fill="rgba(255,255,255,0.15)" />
-      </svg>
-    )
-  }
-];
-
+]
 export default function Projects() {
   const containerVariants = {
     hidden: { opacity: 0 },

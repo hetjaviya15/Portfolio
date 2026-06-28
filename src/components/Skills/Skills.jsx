@@ -34,8 +34,7 @@ const skillCategories = [
     icon: <FaTools />,
     skills: [
       { name: 'Git', level: 80, icon: <FaGitAlt style={{ color: '#F05032' }} /> },
-      { name: 'GitHub', level: 85, icon: <FaGithub style={{ color: '#181717' }} /> },
-      { name: 'VS Code', level: 90, icon: <VscVscode style={{ color: '#007ACC' }} /> }
+      { name: 'GitHub', level: 85, icon: <FaGithub style={{ color: '#181717' }} /> }
     ]
   },
   {
