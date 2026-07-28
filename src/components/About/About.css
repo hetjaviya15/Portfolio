@@ -1,0 +1,384 @@
+.about-container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-description {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.about-description strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Institutions */
+.about-institutions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.institution-card {
+  display: flex;
+  gap: 20px;
+  padding: 16px 20px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+}
+
+.institution-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-blue);
+  box-shadow: var(--shadow-md);
+}
+
+.institution-icon {
+  font-size: 24px;
+  color: var(--accent-blue);
+  background-color: var(--accent-blue-light);
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.institution-info h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.institution-info p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Interests */
+.about-interests {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.interest-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.interest-tag:hover {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+  background-color: var(--accent-blue-light);
+  transform: scale(1.03);
+}
+
+.interest-tag svg {
+  color: var(--accent-blue);
+}
+
+/* Visual - Student ID Badge Card */
+.about-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.visual-card-wrapper {
+  position: relative;
+  padding: 20px;
+}
+
+.student-badge-card {
+  width: 290px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: 24px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Decorative background circle inside the badge */
+.student-badge-card::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 160px;
+  height: 160px;
+  border-radius: var(--radius-full);
+  background-color: var(--accent-blue-light);
+  z-index: 0;
+}
+
+.badge-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed var(--border-color);
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.badge-logo-container {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.badge-logo-container::after {
+  content: '.';
+  color: var(--accent-blue);
+}
+
+.badge-status {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--accent-blue);
+  background-color: var(--accent-blue-light);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.badge-avatar-area {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.badge-avatar-bg {
+  width: 96px;
+  height: 96px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+  border: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.badge-avatar-bg::before {
+  content: '';
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  border-radius: var(--radius-full);
+  border: 1px dashed var(--accent-blue);
+  animation: rotate-cw 20s linear infinite;
+}
+
+.avatar-shape {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background-color: var(--accent-blue);
+  position: relative;
+}
+
+.avatar-shape::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 24px;
+  border-radius: 12px 12px 0 0;
+  background-color: var(--accent-blue);
+  opacity: 0.6;
+}
+
+.badge-details {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.badge-details h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.badge-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent-blue);
+  margin-bottom: 16px;
+}
+
+.badge-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  text-align: left;
+  border-top: 1px solid var(--border-color);
+  padding-top: 14px;
+}
+
+.badge-label {
+  display: block;
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.badge-val {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.badge-footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Authentic CSS Barcode representation */
+.barcode {
+  width: 140px;
+  height: 24px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--text-primary),
+    var(--text-primary) 1px,
+    transparent 1px,
+    transparent 4px,
+    var(--text-primary) 4px,
+    var(--text-primary) 6px,
+    transparent 6px,
+    transparent 8px
+  );
+  opacity: 0.7;
+}
+
+/* Floating Statistics cards overlaying the badge */
+.floating-stat-card {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  padding: 12px 20px;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  transition: all var(--transition-fast);
+}
+
+.floating-stat-card:hover {
+  transform: translateY(-4px) scale(1.05) !important;
+  background-color: var(--bg-primary);
+  border-color: var(--accent-blue);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-top-left {
+  top: 40px;
+  left: -20px;
+}
+
+.card-bottom-right {
+  bottom: 40px;
+  right: -20px;
+}
+
+.stat-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.stat-value {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--accent-blue);
+  line-height: 1;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  
+  .about-visual {
+    order: -1; /* visual on top for mobile */
+  }
+  
+  .floating-stat-card {
+    position: absolute;
+  }
+}
+
+@media (max-width: 480px) {
+  .visual-card-wrapper {
+    padding: 10px;
+  }
+  .student-badge-card {
+    width: 260px;
+    padding: 16px;
+  }
+  .card-top-left {
+    left: -10px;
+  }
+  .card-bottom-right {
+    right: -10px;
+  }
+}

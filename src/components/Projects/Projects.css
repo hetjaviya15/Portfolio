@@ -1,0 +1,219 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.project-card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-smooth), 
+              border-color var(--transition-smooth), 
+              box-shadow var(--transition-smooth);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(59, 130, 246, 0.2);
+  box-shadow: var(--shadow-lg), 0 12px 30px rgba(59, 130, 246, 0.05);
+}
+
+/* Graphic Header and Zoom Effect */
+.project-graphic-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.6 / 1;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.project-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+  display: block;
+}
+
+.project-card:hover .project-svg {
+  transform: scale(1.06);
+}
+
+/* Hover Overlay links */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 23, 42, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-fast) ease;
+  z-index: 2;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay-links {
+  display: flex;
+  gap: 16px;
+}
+
+.project-overlay-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-fast);
+}
+
+.project-overlay-btn:hover {
+  background-color: var(--accent-blue);
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Project Info */
+.project-info {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-title-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.project-description-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+/* Tech Tags */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.project-tag-item {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+}
+
+.project-card:hover .project-tag-item {
+  border-color: rgba(59, 130, 246, 0.15);
+  color: var(--accent-blue);
+  background-color: var(--accent-blue-light);
+}
+
+/* Card Footer */
+.project-card-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-color);
+  padding-top: 18px;
+  margin-top: auto;
+}
+
+.project-footer-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color var(--transition-fast);
+}
+
+.project-footer-link:hover {
+  color: var(--accent-blue);
+}
+
+/* Subtle SVG Micro-Animations */
+
+/* 1. PortX Cursor movement */
+@keyframes hover-click {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-4px, -4px); }
+}
+.project-card:hover .svg-cursor {
+  animation: hover-click 1.5s ease-in-out infinite;
+}
+
+/* 2. Cafe Steam Rising */
+@keyframes rise-steam {
+  0% { transform: translateY(2px); opacity: 0; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(-8px); opacity: 0; }
+}
+.steam-line {
+  animation: rise-steam 2s infinite linear;
+  transform-origin: bottom center;
+}
+.steam-2 {
+  animation-delay: 0.6s;
+}
+.steam-3 {
+  animation-delay: 1.2s;
+}
+
+/* 3. React Dashboard Line Chart & Bars drawing */
+@keyframes draw-graph {
+  from { stroke-dashoffset: 200; }
+  to { stroke-dashoffset: 0; }
+}
+.graph-line {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  transition: stroke-dashoffset 2s var(--transition-smooth);
+}
+.project-card:hover .graph-line {
+  animation: draw-graph 1.5s forwards ease-in-out;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
