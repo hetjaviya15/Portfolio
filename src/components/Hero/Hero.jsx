@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedinIn, FaEnvelope, FaChevronDown, FaDownload } from 'react-icons/fa';
 import Magnetic from '../Magnetic/Magnetic';
+import Profile from '../../assets/profile.pdf';
 import './Hero.css';
 
 const typingPhrases = [
@@ -135,7 +136,11 @@ export default function Hero() {
               </button>
             </Magnetic>
             <Magnetic range={40} speed={0.2}>
-              <a href="#" className="btn btn-secondary btn-icon-gap" onClick={(e) => e.preventDefault()}>
+              <a
+              href={Profile}
+              download="Profile.pdf"
+              className="btn btn-secondary btn-icon-gap"
+              >
                 <FaDownload className="icon-pulse" /> Download Resume
               </a>
             </Magnetic>
